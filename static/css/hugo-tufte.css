@@ -18,9 +18,11 @@ html, button, input, select, textarea, p, nav, section, article, header, footer,
 }*/
 
 code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: "Fira Code", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 1.125rem;
     line-height: 1.6;
+    width: 30em;
+    font-weight: 400;
 }
 
 pre code {
@@ -49,6 +51,7 @@ header.brand{
 header.brand h1 {
     margin: 0;
     margin-bottom: 0.5rem;
+    font-size: 3.4rem;
     font-weight: 400;
 }
 
