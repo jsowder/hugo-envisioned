@@ -3,9 +3,9 @@ layoutdir = "layouts"
 publishdir = "public"
 builddrafts = true 
 canonifyurls = true
-baseurl = "https://github.com/shawnohare/hugo-tufte"
-theme = "hugo-tufte"
-title = "Hugo-tufte Theme Example Site"
+baseurl = "https://github.com/dandermotj/hugo-envisioned"
+theme = "hugo-Envisioned"
+title = "Hugo-Envisioned Theme Example Site"
 
 [taxonomies]
   category = "categories" 
@@ -48,7 +48,7 @@ title = "Hugo-tufte Theme Example Site"
   pre = "<i class='fa fa-github fa-2x'></i> "
   weight = -100 
   identifier = "github"
-  url = "https://github.com/shawnohare/hugo-tufte"
+  url = "https://github.com/dandermotj/hugo-envisioned"
 [[menu.footer]]
   name = ""
   pre = "<i class='fa fa-twitter fa-2x'></i> "
