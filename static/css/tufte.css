@@ -15,6 +15,13 @@
   src: url("roboto/RobotoCondensed-Regular.ttf");
   font-weight: 400; }
 
+@font-face{
+  font-family: 'Fira Code';
+  src: url('FiraCode/FiraCode-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Tufte CSS styles */
 html { font-size: 15px; }
 
