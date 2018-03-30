@@ -3,6 +3,7 @@ layoutdir = "layouts"
 publishdir = "public"
 builddrafts = true 
 canonifyurls = true
+relativeurls = true
 baseurl = "https://github.com/dandermotj/hugo-envisioned"
 theme = "hugo-Envisioned"
 title = "Hugo-Envisioned Theme Example Site"

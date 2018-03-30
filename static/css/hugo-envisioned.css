@@ -33,9 +33,6 @@ pre code {
     overflow-x: scroll;
 }
 
-/* overwrite highlight js so background of code block is transparent */
-code.hljs { background: transparent; }
-
 /*@media (max-width: 760px) {
     pre code {
         width: 90%;

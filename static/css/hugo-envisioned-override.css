@@ -1,0 +1,2 @@
+/* overwrite highlight js so background of code block is transparent */
+code.hljs { background: transparent; }
