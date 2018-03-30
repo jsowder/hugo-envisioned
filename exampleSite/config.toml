@@ -3,8 +3,9 @@ layoutdir = "layouts"
 publishdir = "public"
 builddrafts = true 
 canonifyurls = true
+baseurl = "/"
 relativeurls = true
-baseurl = "https://github.com/dandermotj/hugo-envisioned"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 theme = "hugo-Envisioned"
 title = "Hugo-Envisioned Theme Example Site"
 
@@ -56,5 +57,3 @@ title = "Hugo-Envisioned Theme Example Site"
   weight = -90 
   identifier = "twitter"
   url = "https://twitter.com"
-
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
