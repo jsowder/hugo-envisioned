@@ -27,7 +27,7 @@
     {{ end }} -->
 
     {{ if .Params.categories }}
-      <br>
+      <!-- <br> -->
       <i class="fa fa-tags"> </i>
       {{ range .Params.categories }}
         <a  href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>
