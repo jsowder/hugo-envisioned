@@ -8,12 +8,12 @@
   <section class="list-page">
   {{ range .Data.Pages.GroupByDate "2006" }}
     <details open>
-      <summary class="year">{{ .Key }} ({{ len .Pages }})</summary>
+      <summary class="year">{{ .Key }}</summary>
       {{ range .Pages.GroupByDate "January" }}
         <ul>
           <li>
             <details open>
-              <summary>{{ .Key }} ({{ len .Pages }})</summary>
+              <summary>{{ .Key }}</summary>
                 {{ range .Pages }}
                   <ul>
                     <li>

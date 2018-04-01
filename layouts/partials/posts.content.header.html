@@ -1,14 +1,17 @@
 <section>
-<h1 class="content-title">
-  {{ if .IsNode }}
-  <a href="{{ .Permalink }}">{{ .Title}}</a>
-  {{ else }}
-  <a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} :: Draft {{end}}</a>
-  {{ end }}
-</h1>
-{{ if .IsPage }}
-{{ if .Params.subtitle }}<p class=subtitle>{{ .Params.subtitle }}</p>{{ end }}
-{{ if or (eq .Type "post") (.Params.meta)  }}
+    <div id="top-of-post">
+        <a href="/"><i class="fa fa-chevron-left" aria-hidden="true";></i></a>
+        <h1 class="content-title">
+        {{ if .IsNode }}
+        {{ .Title}}
+        {{ else }}
+        {{ .Title }}{{ if .Draft }} :: Draft {{end}}
+        {{ end }}
+        </h1>
+        {{ if .IsPage }}
+        {{ if .Params.subtitle }}<p class=subtitle>{{ .Params.subtitle }}</p>{{ end }}
+        {{ if or (eq .Type "post") (.Params.meta)  }}
+    </div>
   <span class="content-meta">
 
     <!-- {{ if .Params.author }}

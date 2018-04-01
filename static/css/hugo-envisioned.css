@@ -105,8 +105,19 @@ nav.menu li a:focus {
 /* ------------------------------------------------------------------------ */
 
 /* Content Title styling.  This is mostly to avoid underlying links. */
+
+#top-of-post i {
+    display: inline;
+    background: transparent;
+    font-size: 25px;
+    padding-right: 15px;
+    margin-left: -37px;
+    vertical-align: 5px
+}
+
 h1.content-title {
     /*max-width: 50rem;*/
+    display: inline;
 }
 h1.content-title a:link,
 h1.content-title a:visited {
@@ -194,7 +205,7 @@ table {
 /* Footer, but with a different name to avoid conflicts with tufte.css */
 footer.page-footer{
     padding-top: 1em;
-    margin-top: 3em;
+    margin-top: 1em;
     color: #aaa;
     width: 95%;
     max-width: 45rem;
