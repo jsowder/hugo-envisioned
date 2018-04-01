@@ -52,7 +52,7 @@ header.brand{
 header.brand h1 {
     margin: 0;
     margin-bottom: 0.5rem;
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 400;
 }
 
@@ -203,9 +203,47 @@ p.index-summary {
     margin: 1rem;
 }
 
-table {
-    font-size: 1.4rem;
+table { width: 55%;
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 1.4rem 1%;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    empty-cells: show;
+    -webkit-font-feature-settings: 'tnum'; /* This is technically redundant */
+    -moz-font-feature-settings: 'tnum';
+    -ms-font-feature-settings: 'tnum'; 
 }
+
+thead th { border-bottom: 1px solid #AAAAAA;
+       font-weight: 400;
+       border-collapse: separate;
+       border-spacing: 5px 5px; 
+       padding: .5em .7em;
+    }
+
+tbody tr {
+    padding: .5em .7em;
+    clear: both;
+}
+
+td {
+    padding: .5em .7em;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+td.text { 
+    text-align: left; 
+}
+
+table > caption {
+    font-size: 1.0rem;
+    line-height: 1.6;
+    display: table-footer-group;
+  }
+
+span.table-label { padding-top: 8px; } /* to maintain height relative to table header row */
 
 /* Footer, but with a different name to avoid conflicts with tufte.css */
 footer.page-footer{
