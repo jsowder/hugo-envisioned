@@ -45,13 +45,14 @@ pre code {
 /* ------------------------------------------------------------------------ */
 header.brand{
     margin-top: 0.5em;
+    margin-bottom: 3rem;
 }
 
 /* Main brand title */
 header.brand h1 {
     margin: 0;
     margin-bottom: 0.5rem;
-    font-size: 3.4rem;
+    font-size: 4rem;
     font-weight: 400;
 }
 
@@ -142,6 +143,10 @@ h1.content-title a:focus {
 .content-meta .author {
     /*color: rgb(90, 20, 55)*/
     color: rgba(65, 70, 75, 1);
+}
+
+p.index-summary {
+    margin-bottom: 5rem;
 }
 
 

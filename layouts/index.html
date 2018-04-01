@@ -5,10 +5,14 @@
 {{ partial "brand.html" . }}
 {{ range first 5 .Site.Pages }}
   {{ partial "content.header.html" . }}
-  <p>{{ .Summary }}</p>
-  {{ if .Truncated }}
-  <p><a href="{{ .RelPermalink  }}">Read On &rarr;</a></p>
-  {{ end  }}
+  <p class="index-summary"> 
+    {{ with .Description }}
+    {{ $.Scratch.Set "summary" (markdownify .) }}
+    {{ else }}
+    {{ $.Scratch.Set "summary" ((delimit (findRE "(<p.*?>(.|\n)*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 200 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
+    {{ end }}
+    {{ $.Scratch.Get "summary" }}
+  </p>
 {{ end  }}
 {{ partial "footer.html" . }}
 </article>
