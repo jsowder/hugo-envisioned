@@ -3,16 +3,22 @@
 <div id="layout" class="pure-g">
 <article class="pure-u-1">
 {{ partial "brand.html" . }}
-{{ range first 5 .Site.Pages }}
-  {{ partial "content.header.html" . }}
-  <p class="index-summary"> 
-    {{ with .Description }}
-    {{ $.Scratch.Set "summary" (markdownify .) }}
-    {{ else }}
-    {{ $.Scratch.Set "summary" ((delimit (findRE "(<p.*?>(.|\n)*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 200 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
+{{ range .Site.Pages }}
+  {{if eq .Type "post" }}
+    {{if eq .Title "Posts"}}
+        <h2><a href="{{ .RelPermalink | relURL }}">See all posts</a></h2>
+    {{else}}
+      {{ partial "content.header.html" . }}
+      <p class="index-summary"> 
+        {{ with .Description }}
+        {{ $.Scratch.Set "summary" (markdownify .) }}
+        {{ else }}
+        {{ $.Scratch.Set "summary" ((delimit (findRE "(<p.*?>(.|\n)*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 200 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
+        {{ end }}
+        {{ $.Scratch.Get "summary" }}
+      </p>
     {{ end }}
-    {{ $.Scratch.Get "summary" }}
-  </p>
+  {{ end }}
 {{ end  }}
 {{ partial "footer.html" . }}
 </article>

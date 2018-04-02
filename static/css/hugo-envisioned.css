@@ -107,6 +107,7 @@ nav.menu li a:focus {
 
 /* Content Title styling.  This is mostly to avoid underlying links. */
 
+/* This places the carat left in the margin to the left of the post title */
 #top-of-post i {
     display: inline;
     background: transparent;
@@ -146,7 +147,9 @@ h1.content-title a:focus {
 }
 
 p.index-summary {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 2rem;
 }
 
 
