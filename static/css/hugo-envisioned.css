@@ -26,8 +26,8 @@ code {
 }
 
 pre code {
-    width: 52.5%;
-    font-size: 1.2rem;
+    width: 75%;
+    font-size: 1.1rem;
     padding-left: 2.5%;
     display: block;
     overflow-x: scroll;
