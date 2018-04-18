@@ -5,11 +5,18 @@ meta = true
 math = true
 title = "Hugo-Tufte Features"
 subtitle = "Fancy Subtitle"
+description = "A post illustrating what is possible to achieve using pure markdown and \\( \LaTeX \\). Originally from the Hugo Tufte theme by Shawn O'Hare."
 toc = true
 categories = ["mathjax", "latex", "tufte-css"]
 
 
 +++
+
+The Hugo Envisioned theme was derived from the Hugo Tufte theme, developed by 
+Shawn O'Hare. This post is the feature example post from that theme. It 
+nicely illustrates many *pure markdown capabilities* of this theme. If you are 
+using this theme with blogdown, you cannot mix the Hugo extensions into 
+Rmarkdown files, only in pure markdown files.
 
 This is a quick demonstration post.  It serves as an example of the features
 of this theme.  One of them is \\( \LaTeX \\) via MathJax. 
@@ -21,8 +28,6 @@ This is an example of an epigraph with some math
 \\(\mathbb N \subseteq \mathbb R \\)
 to start the beginning of a section.
 {{% /epigraph %}}
-
-<!--more-->
 
 ### Inline
 Some inline math:
