@@ -208,10 +208,7 @@ p.index-summary {
 
 table { width: 55%;
     text-align: right;
-    font-size: 1.2rem;
-    line-height: 1.4;
     margin: 1.4rem 1%;
-    border-collapse: separate;
     border-spacing: 0 5px;
     empty-cells: show;
     -webkit-font-feature-settings: 'tnum'; /* This is technically redundant */

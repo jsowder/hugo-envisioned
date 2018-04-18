@@ -189,6 +189,13 @@ p, footer, table, div.table-wrapper-small, div.supertable-wrapper > p, div.bookt
 
 div.fullwidth, table.fullwidth { width: 100%; }
 
+div.fullwidth p.caption {
+  margin-right: 0;
+  max-width: 33%;
+}
+
+p.caption { text-align: left; }
+
 div.table-wrapper { overflow-x: scroll;
                     font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif; }
 
