@@ -240,11 +240,16 @@ td.text {
     text-align: left; 
 }
 
-table > caption {
+table > caption { 
+    float:right;
+    clear:right;
+    margin-right: -60%;
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 1.0rem;
-    line-height: 1.6;
-    display: table-footer-group;
-  }
+    line-height: 1.6; 
+}
 
 span.table-label { padding-top: 8px; } /* to maintain height relative to table header row */
 
