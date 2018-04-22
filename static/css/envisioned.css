@@ -30,7 +30,7 @@ body { width: 87.5%;
        margin-right: auto;
        padding-left: 12.5%;
        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
-       background-color: #fffff8;
+       background-color: #ffffff;
        color: #222;
        max-width: 1400px;
        counter-reset: sidenote-counter; }
