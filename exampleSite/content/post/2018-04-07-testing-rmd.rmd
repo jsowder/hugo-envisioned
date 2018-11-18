@@ -1,0 +1,77 @@
+---
+title: Testing Rmd
+subtitle: How'd you like this subtitle `r 5*5`
+author: ~
+description: Testing Rmd description `r rnorm(1)`
+date: '2018-04-07'
+slug: testing-rmd
+categories: ['rmd test']
+math: true
+output:
+  tufte::tufte_html:
+    toc: true
+    fig_width: 6
+    dev: "svg"
+
+---
+
+```{r setup, include=FALSE}
+library(purrr)
+library(tufte)
+# invalidate cache when the tufte version changes
+knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tufte'))
+options(htmltools.dir.version = FALSE)
+```
+
+`r tufte::margin_note("![neural-network](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colored_neural_network.svg/300px-Colored_neural_network.svg.png)")` 
+
+This is to test the `tufte` packages integration with this `hugo-envisioned` blogdown theme. 
+
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '980566101124722688')
+```
+
+Now let's try some R code:
+
+```{r, code-test}
+head(iris, 3) %>% knitr::kable(caption = "Iris dataset")
+```
+
+This is an attempt at a margin figure... 
+
+```{r fig-margin, fig.margin = TRUE, fig.cap = "MPG vs horsepower, colored by transmission.", fig.width=3.5, fig.height=3.5, cache=TRUE, message=FALSE}
+library(ggplot2)
+mtcars2 <- mtcars
+mtcars2$am <- factor(mtcars$am, labels = c('automatic', 'manual'))
+
+ggplot(mtcars2, aes(hp, mpg, color = am)) +
+  geom_point() + geom_smooth() +
+  theme(legend.position = 'bottom')
+```
+
+Every few weeks in 2017 there was a new breakthrough application of neural networks. If you're reading this, then I probably don't need to list them. So eventually the ridiculous general ability of these algorithms encouraged me to dig in, so by the end of 2017 I decided it was time to jump on the deep learning bandwagon. This was just around the same time [deeplearning.ai](http://deeplearning.ai/) was launched by Andrew Ng. Given Ng's reputation, it was a no brainer that this set of courses was the way forward.
+
+## Trying to render 
+
+```{marginfigure}
+We know from _the first fundamental theorem of calculus_ that for $x$ in $[a, b]$:
+
+$$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x)$$
+```
+
+Here comes a full width figure!
+
+```{r fig-fullwidth, fig.width = 10, fig.height = 2, fig.fullwidth = TRUE, fig.cap = "A full width figure.", warning=FALSE, message=FALSE, cache=TRUE}
+ggplot(diamonds, aes(carat, price)) + geom_smooth() +
+  facet_grid(~ cut)
+```
+
+This figure goes in the main column
+
+```{r fig-main, fig.cap = "A figure in the main column.", cache=TRUE}
+ggplot(diamonds, aes(cut, price)) + geom_boxplot()
+```
+
+```{marginfigure}
+This is a margin figure processed by knitr please god...
+```
