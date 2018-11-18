@@ -50,10 +50,10 @@ tufte_hugo_html <- function(..., margin_references = TRUE) {
         fn_label, i, if (pandoc2) "footnote-ref" else "footnoteRef", fn_label, i, i
       )
       con <- sprintf(paste0(
-        '<label for="tufte-sn-%d" class="margin-toggle sidenote-number"></label>',
+        '<label for="tufte-sn-%d" class="margin-toggle sidenote-number">%d</label>',
         '<input type="checkbox" id="tufte-sn-%d" class="margin-toggle">',
-        '<span class="sidenote"> %s</span>'
-      ), i, i, notes[i])
+        '<span class="sidenote"><span class="sidenote-number">%d</span> %s</span>'
+      ), i, i, i, i, notes[i])
       x <- gsub_fixed(num, con, x)
     }
     # remove footnotes at the bottom
@@ -122,7 +122,7 @@ tufte_hugo_html <- function(..., margin_references = TRUE) {
     }
     res <- knitr::hook_plot_md(x, options)
     if (fig_margin) {
-      res <- gsub_fixed('<p class="caption">', '<!--\n<p class="caption marginnote This is a test ">-->', res)
+      res <- gsub_fixed('<p class="caption">', '<!--\n<p class="caption marginnote">-->', res)
       res <- gsub_fixed("</p>", "<!--</p>-->", res)
       res <- gsub_fixed("</div>", "<!--</div>--></span></p>", res)
       res <- gsub_fixed(
@@ -130,10 +130,11 @@ tufte_hugo_html <- function(..., margin_references = TRUE) {
           "<p>", '<span class="marginnote shownote">', '\n<!--\n<div class="figure">-->'
         ), res
       )
-    }
-    if (fig_fullwd) {
+    } else if (fig_fullwd) {
       res <- gsub_fixed('<div class="figure">', '<div class="figure fullwidth">', res)
-      res <- gsub_fixed('<p class="caption">', '<p class="caption marginnote shownote">', res)
+      res <- gsub_fixed(
+        '<p class="caption">', '<p class="caption marginnote shownote">', res
+      )
     }
     res
   }
