@@ -6,8 +6,8 @@ canonifyurls = true
 baseurl = "/"
 relativeurls = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-theme = "hugo-Envisioned"
-title = "Hugo-Envisioned Theme Example Site"
+theme = "hugo-envisioned"
+title = "Hugo-Envisioned"
 
 [taxonomies]
   category = "categories" 
@@ -25,19 +25,19 @@ title = "Hugo-Envisioned Theme Example Site"
 # -----------------------------------------------------------------------
 [[menu.nav]]
   name = "Home"
-  pre = "<i class='fa fa-home fa-lg'></i> "
+# pre = "<i class='fa fa-home fa-lg'></i> "
   weight = -110 
   identifier = "home"
   url = "/"
 [[menu.nav]]
   name = "Posts"
-  pre = "<i class='fa fa-book fa-lg'></i> "
+# pre = "<i class='fa fa-book fa-lg'></i> "
   weight = -100 
   identifier = "posts"
   url = "/post"
 [[menu.nav]]
   name = "Categories"
-  pre = "<i class='fa fa-tags fa-lg'></i> "
+# pre = "<i class='fa fa-tags fa-lg'></i> "
   weight = -90 
   identifier = "categories"
   url = "/categories"
