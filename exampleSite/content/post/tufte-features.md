@@ -1,14 +1,13 @@
 +++
-author = "AUTHOR NAME"
+author = "Shawn O'Hare"
 date = "2016-02-20T13:56:01-08:00"
 meta = true
 math = true
 title = "Hugo-Tufte Features"
 subtitle = "Fancy Subtitle"
-description = "A post illustrating what is possible to achieve using pure markdown and \\( \LaTeX \\). Originally from the Hugo Tufte theme by Shawn O'Hare."
+description = "A post illustrating what is possible to achieve using pure markdown and \\(\\LaTeX \\). Originally from the Hugo Tufte theme by Shawn O'Hare."
 toc = true
 categories = ["mathjax", "latex", "tufte-css"]
-
 
 +++
 
