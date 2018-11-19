@@ -1,3 +1,17 @@
+# Envisioned Hugo Theme 
+
+This theme implements Envisioned CSS into a Hugo theme. It is designed to 
+work with blogdown in R. 
+
+To Do:
+
+  * Get custom R build for example site working properly
+  * Fix margin figure labels numbering
+  * Fix image captions in margin
+  * Prevent html page sizing (can scroll out to the right) 
+
+-------------------------------------------------------------------
+
 # Tufte Hugo Theme
 
 Hugo-Tufte is a minimalist blog-like theme for the
