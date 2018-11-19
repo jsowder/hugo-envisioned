@@ -4,7 +4,6 @@ publishdir = "public"
 builddrafts = true 
 canonifyurls = true
 baseurl = "/"
-relativeurls = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 theme = "hugo-envisioned"
 title = "Hugo-Envisioned"
