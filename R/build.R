@@ -122,7 +122,7 @@ tufte_hugo_html <- function(..., margin_references = TRUE) {
     }
     res <- knitr::hook_plot_md(x, options)
     if (fig_margin) {
-      res <- gsub_fixed('<p class="caption">', '<!--\n<p class="caption marginnote This is a test ">-->', res)
+      res <- gsub_fixed('<p class="caption">', '<!--\n<p class="caption marginnote">-->', res)
       res <- gsub_fixed("</p>", "<!--</p>-->", res)
       res <- gsub_fixed("</div>", "<!--</div>--></span></p>", res)
       res <- gsub_fixed(
