@@ -1,14 +1,25 @@
 # Envisioned Hugo Theme 
 
 This theme implements Envisioned CSS into a Hugo theme. It is designed to 
-work with blogdown in R. 
+work with blogdown in R. To use this theme as your blogdown theme, install 
+it as normal and then paste the `R/` folder into the root of your blogdown 
+folder. The `R/build.R` file is a custom build script that gets the Tufte 
+features of an Rmarkdown document to be rendered correctly in blogdown. It 
+supports all features of the `tufte` package - see the Tufte Handout example 
+post in the example site.
+
+Any Rmd files that can be rendered into a `tufte::tufte_html` output by 
+`rmarkdown` will work. The `R/build.R` script is a hack, but works. 
+
+The rest of this README is from Shawn O'Hare's original Tufte Hugo theme. 
+It all still applies and is ultimately how any pure markdown posts should 
+be written so they can avail of the Tufte style features. 
 
 To Do:
 
-  * Get custom R build for example site working properly
-  * Fix margin figure labels numbering
-  * Fix image captions in margin
-  * Prevent html page sizing (can scroll out to the right) 
+  * Fix issue custom build so the first time a post is rendered it 
+doesn't get rendered by `blogdown::build_site()` and only gets rendered by 
+the custom build
 
 -------------------------------------------------------------------
 
