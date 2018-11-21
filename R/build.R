@@ -3,6 +3,22 @@
 #   - render them with a modified tufte::tufte_html
 #   - hugo should take it from there?
 
+# From the blogdown book - this is the passage we need to follow in order 
+# to fix the first render/cache issue which appends "#fig:fig..." to 
+# figure captions in the margin 
+
+# For method = 'custom', build_site() will not process any R Markdown files,
+# nor will it call Hugo to build the site. No matter which method you choose
+# to use, build_site() will always look for an R script /R/build.R and execute 
+# it if it exists. This gives you the complete freedom to do anything you want 
+# for the website. For example, you can call knitr::knit() to compile Rmd to 
+# Markdown (*.md) in this R script instead of using rmarkdown::render(). This 
+# feature is designed for advanced users who are really familiar with the 
+# knitr package48 and Hugo or other static website generators (see Chapter 5).
+#
+# When R/build.R exists and method = 'html', the R Markdown files are knitted first, 
+# then the script R/build.R is executed, and lastly Hugo is called to build the website.
+
 library(blogdown)
 library(tufte)
 library(xfun)
