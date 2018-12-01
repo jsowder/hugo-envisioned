@@ -8,9 +8,10 @@ features of an Rmarkdown document to be rendered correctly in blogdown. It
 supports all features of the `tufte` package - see the Tufte Handout example 
 post in the example site.
 
-In `R/` there is a `.Rprofile` which sets the `blogdown.options` global
-variable so that when `blogdown::build_site` is called it only runs the 
-custom `build.R`. Copy this file into the root of your blogdown site.
+In `R/` there is a file called `Rprofile` which sets the `blogdown.options` 
+global variable so that when `blogdown::build_site` is called it only runs 
+the custom `build.R`. Copy this file into the root of your blogdown site 
+naming it `.Rprofile`.
 
 Any Rmd files that can be rendered into a `tufte::tufte_html` output by 
 `rmarkdown` will work. The `R/build.R` script is a hack, but works. 
