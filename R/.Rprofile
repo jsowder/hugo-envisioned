@@ -1,0 +1,2 @@
+options(blogdown.method = "custom")
+
