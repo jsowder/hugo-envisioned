@@ -25,8 +25,6 @@ To Do:
   * Fix issue custom build so the first time a post is rendered it 
 doesn't get rendered by `blogdown::build_site()` and only gets rendered by 
 the custom build
-  * Fix Latex rendering in post body - for some reason it's working in the 
-margin figure but not in the body? 
 
 -------------------------------------------------------------------
 
