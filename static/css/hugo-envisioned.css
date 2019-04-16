@@ -11,11 +11,6 @@ html, button, input, select, textarea, p, nav, section, article, header, footer,
     font-family: "Roboto Condensed", -apple-system, "San Francisco", "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue", "Lucida Grand", sans-serif;
 }
 
-body.index {
-    width: 75%;
-    padding-left: 25%;
-}
-
 /* Hugo code blocks are <pre><code class="language-$lang">...</code></pre> */
 /*@media screen and (max-width: 760px) {
     pre code {
