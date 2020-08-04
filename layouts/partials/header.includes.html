@@ -1,6 +1,6 @@
 <!-- Load MathJax, if necessary. -->
 {{ if or .Params.math .IsHome }}
-  {{ partial "math.html" . }}
+{{ partial "math.html" . }}
 {{ end }}
 
 <!-- Syntax highlighting -->
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
 <![endif]-->
 <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 <!--<![endif]-->
 
 <!-- Fonts -->
@@ -30,3 +30,8 @@
 <link rel="stylesheet" href="{{ "/css/envisioned.css" | absURL }}">
 <link rel="stylesheet" href="{{ "/css/hugo-envisioned.css" | absURL }}">
 <link rel="stylesheet" href="{{ "/css/hugo-envisioned-override.css" | absURL }}">
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
