@@ -2,4 +2,7 @@ body {
   width: 80%;
   padding-left: 10%;
   padding-right: 10%;
-} 
+}
+article{
+  padding-top: 0%;
+}
