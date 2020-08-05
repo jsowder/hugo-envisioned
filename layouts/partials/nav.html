@@ -1,7 +1,7 @@
 <nav class="menu">
     <ul>
         {{ range .Site.Menus.nav  }}
-        <li><a href="{{ .URL }}" target="_blank">
+        <li><a href="{{ .URL }}" target="_blank" rel="noreferrer">
                 {{ .Pre }}{{ .Name }}
             </a></li>
         {{ end }}
