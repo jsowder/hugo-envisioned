@@ -1,4 +1,4 @@
-# My customizations
+# Custom Port of Hugo-Envisioned Theme
 
 (View this theme in action at [my portfolio site](https://www.jacobsowder.com/?utm_source=github).)
 
