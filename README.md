@@ -1,6 +1,6 @@
 # My customizations
 
-(View this theme in action at [my portfolio site](https://jsowder.github.io).)
+(View this theme in action at [my portfolio site](https://www.jacobsowder.com/?utm_source=github).)
 
 This theme is a fork-of-a-fork. It's based on [hugo-envisioned](https://github.com/1danjordan/hugo-envisioned), which is based on [hugo-tufte](https://github.com/shawnohare/hugo-tufte).
 
