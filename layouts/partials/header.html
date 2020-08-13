@@ -4,6 +4,6 @@
   <title>{{ .Site.Title }} | {{ .Title  }}</title>
   {{ partial "meta.html" . }}
   {{ partial "opengraph.html" }}
-  {{ partial "google_analytics.html" }}
   {{ partial "header.includes.html" . }}
+  {{ template "_internal/google_analytics.html" . }}
 </head>
